@@ -1,3 +1,0 @@
-# my-awesome-project
-
-second
