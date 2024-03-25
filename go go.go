@@ -110,7 +110,7 @@ func translate(num1 string) int {
 
 		}
 	}
-	panic("Error, разраб долбоеб")
+	panic("Error")
 
 }
 func intToRoman(num int) string {
