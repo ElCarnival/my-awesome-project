@@ -18,6 +18,7 @@ func main() {
 
 		var operation string = ""
 		if strings.Contains(text, "*") {
+
 			operation = "*"
 
 		} else if strings.Contains(text, "/") {
@@ -33,6 +34,9 @@ func main() {
 
 		result := strings.Split(text, operation)
 
+		if len(result) > 2 {
+			panic("Некорректный ввод")
+		}
 		num1 := result[0]
 		num2 := result[1]
 
@@ -50,7 +54,7 @@ func main() {
 			num12, _ := strconv.Atoi(num2)
 			fmt.Println(calculate(num11, num12, operation))
 		} else {
-			panic("Числа должны быть целыми, арабскими или римскими")
+			panic("Некорректный ввод")
 		}
 	}
 
